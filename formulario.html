@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="open.png" type="image/x-icon">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header>
+        <h1>Introdução ao Formulário</h1>
+        <nav>
+            <a href="https://github.com/G-Glass" ><img src="imagens/logo-github.jpg" alt="" ></a>
+            <a href="https://www.youtube.com/"><img src="imagens/logo-youtube.jpg" alt=""></a>
+            <a href=""><img src="imagens/logo-twitter.jpg" alt=""></a>
+            <a href=""><img src="imagens/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="h2">Criando Formulários</h2>
+            <article>
+                <form action="cadastro.php" method="post" id="form2">
+                    <p><label for="inome">Nome: </label><input type="text" name="Nome" id="inome"></p>
+                    <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+                    <p><input type="submit" value="enviar"></p>
+                </form>
+            </article>
+            <h2 class="h2">Teste de Formulário</h2>
+            <form action="cadastro.php" method="post" class="form2" id="form2">
+                <p class="p2"><label for="usuario">Nome do usuario:</label >
+                <input type="text" name="iusuario" id="usuario" required minlength="7" maxlength="15" size="15" placeholder="Nome do usuario">
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" name="ipassword" id="password" required minlength="8" size="11" placeholder="Senha do usuario"> 
+                </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+           
+        </section>
+    </main>
+</body>
+</html>
